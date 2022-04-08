@@ -31,7 +31,6 @@ func main() {
 
 	// recive file path
 	flag.String("secrets", "secrets.yaml", "Secrets file need to be base64.")
-
 	pflag.CommandLine.AddGoFlagSet(flag.CommandLine)
 	pflag.Parse()
 	viper.BindPFlags(pflag.CommandLine)
