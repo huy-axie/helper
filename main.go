@@ -17,6 +17,7 @@ import (
 
 const secret = `
 envFroms:
+  enabled: true
   env:{{- range $key, $value := .}}
     {{ $key }} : {{ $value }}
 {{- end -}}
